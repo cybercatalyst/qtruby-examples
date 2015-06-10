@@ -1,0 +1,3 @@
+[submodule "qtruby"]
+	path = qtruby
+	url = https://github.com/cybercatalyst/qtruby.git

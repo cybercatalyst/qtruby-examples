@@ -1,0 +1,5 @@
+[qtruby]
+author=Jacob Dawid
+description=Execute ruby code from within your C++/Qt application.
+license=AGPLv3
+website=
