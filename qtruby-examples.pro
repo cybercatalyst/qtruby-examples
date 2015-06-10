@@ -4,3 +4,7 @@ TEMPLATE = subdirs
 SUBDIRS = \
     minimal
 include(pods-subdirs.pri)
+
+OTHER_FILES = \
+  README.md \
+  LICENSE
