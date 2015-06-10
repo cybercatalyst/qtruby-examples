@@ -23,7 +23,6 @@
 
 // Qt includes
 #include <QCoreApplication>
-#include <QDebug>
 
 // QtRuby includes
 #include "qruby.h"
