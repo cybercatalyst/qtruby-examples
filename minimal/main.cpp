@@ -23,18 +23,22 @@
 
 // Qt includes
 #include <QCoreApplication>
+#include <QDebug>
 
 // QtRuby includes
 #include "qruby.h"
 #include "qrubyvalue.h"
+#include "qrubyclass.h"
 
 int main(int argc, char *argv[]) {
     QCoreApplication app(argc, argv);
+    ruby_sysinit(&argc, &argv);
+
     Q_UNUSED(app);
 
     QRuby rb;
     rb.printVersion();
-    rb.evaluate("(1..10).each do |n| puts n end");
+    qDebug() << rb.evaluate("(1..10).each do |n| puts n end").toString();
 
     return 0;
 }
